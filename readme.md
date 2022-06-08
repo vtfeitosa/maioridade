@@ -1,4 +1,5 @@
 History of Versions
 ---
 Version 1.0
-Last update on * | * | 2022
+![](https://github.com/vtfeitosa/maioridade/blob/master/assets/versions/home_v1.0.jpg?raw=true)
+Last update on 8 | June | 2022
