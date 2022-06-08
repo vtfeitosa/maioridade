@@ -14,16 +14,47 @@
             </div>
         </header>
         <main>
-            
+            <section>
+                <div>
+                    <input id="n1" type="number">
+                </div>
+                <div>
+                    <input id="n2" type="number">
+                </div>
+                <div>
+                    <button type="button" onclick="comparenumbers()">Show</button>
+                    <p id="result"></p>
+                </div>
+            </section>
+            <section>
+
+            </section>
         </main>
         <footer>
             <!-- Rodapé da Página -->
             <section class="footer_extra">
                 <p>So, this page was developed as an activity of the Introduction to HTML Course at Alpha EdTech, by the student <a href="https://www.linkedin.com/in/vtfeitosa/" target="_blank">Vitória Feitosa</a>.<br/> 
-                    All opinions about the student's musical preference are personal options, and it's okay. Thank you for understanding. :)
+                    All the code is being studied, patience... Thank you for understanding. :)                
                 </p>
-                <p>Last Update on * | * | 2022 </p>
+                <p>Last Update on 8 | June | 2022 </p>
             </section>
         </footer>
+        <script>
+            function comparenumbers(){
+
+                const n1 = parseFloat(document.getElementById('n1').value);
+                const n2 = parseFloat(document.getElementById('n2').value);
+
+                let result = document.getElementById('result');
+
+                if (n1 === n2){
+                    result.innerHTML = "os números são iguais";
+                }else if (n1 > n2){
+                    result.innerHTML = "n1 é maior que n2";
+                }else if (n1 < n2){
+                    result.innerHTML = "n1 é menor que n2";
+                }
+            }
+        </script>
     </body>
 </html>
